@@ -2,4 +2,34 @@
 
 /* 回答はここに書いてね */
 
+.q9__balloon {
+  position: relative;
+  margin: 0 auto;
+  padding: 20px;
+  width: 500px;
+  font-size: 16px;
+  line-height: 16px;
+  border-radius: 30px;
+  border: 5px solid #222;
+  background: white;
+}
+
+.q9__balloon:before {
+  content: "";
+  position: absolute;
+  bottom: -45px;
+  left: 30px;
+  border: 20px solid transparent;
+  border-top-color: #222;
+}
+
+.q9__balloon:after {
+  content: "";
+  position: absolute;
+  bottom: -38px;
+  left: 30px;
+  border: 20px solid transparent;
+  border-top-color: white;
+}
+
 /* 回答はここに書いてね */
