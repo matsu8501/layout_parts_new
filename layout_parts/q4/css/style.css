@@ -1,56 +1,53 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
+.gray-box {
+  padding: 20px;
+  background-color: #ECF1F2;
+  box-sizing: border-box;
+}
+
 .q4-table {
   display: table;
   width: 100%;
-  border: solid #ecf1f2 20px;
-  margin: 0 auto;
-  box-sizing: border-box;
+  margin-bottom: 20px;
 }
 
 .q4-table:last-child {
-  border-top: none;
+  margin-bottom: 0;
 }
 
-[class^="q4-data"] {
+.q4-data {
   padding: 20px;
   text-align: center;
   box-sizing: border-box;
+  display: table-cell;
 }
 
-.q4-data1 {
-  display: table-cell;
+.is-orange {
   width: 100px;
   background-color: #fdc8b8;
 }
 
-.q4-data2 {
-  display: table-cell;
-  width: fixed;
+.is-purple {
   background-color: #e0abd9;
 }
 
-.q4-data3 {
+.is-blue {
   display: table-cell;
   width: 100px;
   background-color: #b6d8ed;
 }
 
-.q4-data4 {
-  display: table-cell;
-  width: fixed;
+.is-yellow {
   background-color: #e5d32e;
 }
 
-.q4-data5 {
-  display: table-cell;
-  width: fixed;
+.is-red {
   background-color: #ec8f9a;
 }
 
-.q4-data6 {
-  display: table-cell;
+.is-greeen {
   width: 500px;
   background-color: #8fdcad;
 }

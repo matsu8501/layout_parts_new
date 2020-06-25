@@ -1,53 +1,73 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
-
-.q6__box__content1 {
+.is-textAlign, {
+  text-align: center;
   background-color: #e6f2ff;
-  width: 90px;
+  width: 300px;
   padding: 10px 0;
-  margin: 0 auto;
+  box-sizing: border-box;
 }
 
-.q6__text1 {
+.is-textAlign .q6__box__inner {
   text-align: center;
 }
 
-.q6__text2 {
+.q6--horizontal .q6__box__text {
   width: 90px;
   padding: 10px 0;
   background-color:#e6f2ff;
-  margin: 0 auto;
-  text-align: center;
 }
 
-.q6.q6--around.table {
+.q6__box.is-textAlign .q6__box__text {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.q6__box.is-margin .q6__box__text {
+  margin: 0 auto;
+  text-align: center;
+}    
+
+.q6--around.is-table {
   display: table;
 }
 
-.q6--around--box {
+.q6--around.is-table .q6__box {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
+  background-color: #ECF1F2;
 }
 
-.q6--around--text1 {
+.q6--around {
+  width: 300px;
+  height: 200px;
+  margin: 0 auto;
+  background-color: #ECF1F2;
+} 
+
+.q6--around.is-table .q6__box__text {
   display: inline-block;
-  background-color: #fff;
   padding: 10px;
+  background-color: #FFF;
 }
 
-.q6.q6--around.flex {
+.q6--around.is-flex .q6__box__text {
+  padding: 10px;
+  background-color: #FFF;
+}
+
+.q6--around.is-flex {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.q6--around--text2 {
+.q6--around.is-flex .q6__box__text {
   background-color: #fff;
   padding: 10px;
 }
-
 
 .q6__box.is-stable {
   position: relative;
@@ -57,7 +77,7 @@
   position: relative;
 }
 
-.q6__box__inner1 {
+.q6__box.is-stable .q6__box__inner {
   background-color: #e6f2ff;
   position: absolute;
   top: 0;
@@ -71,7 +91,7 @@
   text-align: center;
 }
 
-.q6__box__inner2 {
+.q6__box.is-flexible .q6__box__inner {
   background-color: #e6f2ff;
   position: absolute;
   top: 50%;
