@@ -18,7 +18,6 @@
   font-weight: bold;
   position: absolute;
   width: 100px;
-  height: 100px;
   font-size: 20px;
 }
 
@@ -27,17 +26,6 @@
   top: 40px;
   left: 200px;
   background-color: #ffefd3;
-}
-
-.is-8:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0px;
-  left: 80px;
-  background-color: #ffefd3;
-  width: 20px;
-  height: 20px;
 }
 
 .is-2 {
@@ -87,6 +75,17 @@
   top: 120px;
   left: 120px;
   background-color: #de70cf;
+}
+
+.is-8:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 80px;
+  background-color: #ffefd3;
+  width: 20px;
+  height: 20px;
 }
 
 .is-9 {

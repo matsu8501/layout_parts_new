@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
-.is-textAlign, {
+.is-textAlign {
   text-align: center;
   background-color: #e6f2ff;
   width: 300px;
@@ -21,7 +21,7 @@
 
 .q6__box.is-textAlign .q6__box__text {
   text-align: center;
-  margin: 0 auto;
+  display: inline-block;
 }
 
 .q6__box.is-margin .q6__box__text {
@@ -39,13 +39,6 @@
   vertical-align: middle;
   background-color: #ECF1F2;
 }
-
-.q6--around {
-  width: 300px;
-  height: 200px;
-  margin: 0 auto;
-  background-color: #ECF1F2;
-} 
 
 .q6--around.is-table .q6__box__text {
   display: inline-block;

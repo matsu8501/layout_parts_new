@@ -3,8 +3,7 @@
 /* 回答はここに書いてね */
 
 .q8__photo { 
-  width: 50%;
-  height: 50%;
+  width: 500px;
   margin: 0 auto;
   overflow: hidden;
   position: relative;
@@ -18,7 +17,22 @@
 
 .q8__photo:hover img {
   transform: scale(1.5,1.5);
+}
+
+.q8__mask {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: -100%;
+  left: 0;
   transition-duration: 0.5s;
+  background: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,8));
+} 
+
+.q8__photo:hover .q8__mask {
+  opacity: 1;
+  bottom: 0;
 }
 
 .q8__text {
@@ -27,30 +41,14 @@
   line-height: 16px;
   color:	white;
   word-break: break-all;
-  position: absolute;
-  bottom: -100%;
   padding: 20px;
-  transition-duration: 0.5s;
-}
-
-.q8__mask {
-  opacity: 0;
   position: absolute;
-  top: 0;
   bottom: 0;
   left: 0;
-  right: 0;
-  transition-duration: 0.5s;
-  background: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,8));
-} 
-
-.q8__photo:hover .q8__mask {
-  opacity: 1;
 }
 
 .q8__photo:hover .q8__text {
   opacity: 1;
-  bottom: 0;
 }
 
 .q8__circle {
@@ -61,14 +59,7 @@
   border: 10px solid #ecf1f2;
   border-top-color: #00bcd4;
   box-sizing: border-box;
-  animation-name: rotation;
-  animation-duration: 1.1s;
-  animation-timing-function: linear;
-  animation-delay: 0s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-play-state: running;
-  animation-fill-mode: none;
+  animation: rotation 1.1s infinite linear;
 }
 
 @keyframes rotation {
