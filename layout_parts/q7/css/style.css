@@ -7,22 +7,21 @@
   clear: both;
 }
 
-.of-float,
-.of-table,
-.of-inlineblock,
-.of-flex {
+.is-float,
+.is-tablecell,
+.is-inlineblock,
+.is-flexbox {
   width: 225px;
   font-size: 16px;
 }
 
-.of-float {
+.is-float {
   float: left;
-  width: 225px;
   margin-left: 50px;
   box-sizing: border-box;
 }
 
-.of-float:first-child {
+.is-float:first-child {
   margin-left: 0;
 }
 
@@ -30,28 +29,28 @@
   display: table;
 }
 
-.of-table {
+.is-tablecell {
   display: table-cell;
   vertical-align: middle;
   padding-left: 50px;
 }
 
-.is-table:first-child {
+.is-tablecell:first-child {
   padding-left: 0;
 }
 
-.is-fontzero {
+.is-fontinit {
   font-size: 0;
 }
 
-.of-inlineblock {
+.is-inlineblock {
   display: inline-block;
   margin-left: 50px;
   vertical-align: middle;
   box-sizing: border-box;
 } 
 
-.of-inlineblock:first-child {
+.is-inlineblock:first-child {
   margin-left: 0;
 }
 
@@ -61,7 +60,7 @@
   align-items: flex-end;
 }
 
-.of-flex {
+.is-flexbox {
   vertical-align: middle;
   box-sizing: border-box;
 }
