@@ -16,11 +16,10 @@
 }
 
 .q8__photo:hover img {
-  transform: scale(1.5,1.5);
+  transform: scale(1.5);
 }
 
 .q8__mask {
-  opacity: 0;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -31,24 +30,18 @@
 } 
 
 .q8__photo:hover .q8__mask {
-  opacity: 1;
   bottom: 0;
 }
 
 .q8__text {
-  opacity: 0;
   font-size:  16px;
   line-height: 16px;
-  color:	white;
+  color:	#fff;
   word-break: break-all;
   padding: 20px;
   position: absolute;
   bottom: 0;
   left: 0;
-}
-
-.q8__photo:hover .q8__text {
-  opacity: 1;
 }
 
 .q8__circle {

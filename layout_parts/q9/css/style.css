@@ -11,7 +11,7 @@
   line-height: 16px;
   border-radius: 30px;
   border: 5px solid #222;
-  background: white;
+  background: #fff;
 }
 
 .q9__balloon:before,
@@ -29,7 +29,7 @@
 
 .q9__balloon:after {
   bottom: -38px;
-  border-top-color: white;
+  border-top-color: #fff;
 }
 
 /* 回答はここに書いてね */
